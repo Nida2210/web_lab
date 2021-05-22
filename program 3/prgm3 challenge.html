@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Assignment 3</title>
+</head>
+<body>
+      <link rel="stylesheet" href="Assignment3.css">
+      <title>Program_3</title>
+     <header><nav>
+          <a href="/#">HOME</a> |
+          <a href="/#">PLACES</a> |
+          <a href="/#">GALLERY</a> |
+          <a href="/#">ABOUT US</a>
+        </nav>
+      </header> 
+        <h2><u>WONDERLA,BANGALORE</u></h2>
+      <p id="demo"></p>
+      <script>
+      var var1 = setInterval(inTimer, 500);
+      var fs = 5; 
+      var ids = document.getElementById("demo");
+      function inTimer()
+      {
+        ids.innerHTML = 'wonderla';
+        ids.setAttribute('style', "font-size: " + fs + "px; color:red");
+        fs += 5;
+        if (fs >= 50)
+        {
+          clearInterval(var1);
+          var2 = setInterval(deTimer, 500);
+        }
+      }
+    function deTimer()
+      {
+        fs -= 5;
+        ids.innerHTML = 'wonderla';
+        ids.setAttribute('style', "font-size: " + fs + "px; color: blue");
+       if (fs == 5)
+        {
+          clearInterval(var2);
+          var1 = setInterval(inTimer, 500);
+        }
+      }
+</script>
+      <title>YUVRAJ SINGH</title>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Wonderla_Bangalore_BNC.jpg/1200px-Wonderla_Bangalore_BNC.jpg" alt="Paul Walker" width="700" height="400">
+      <br>
+      <h3>by<a href="/html">nida</a></h3>
+      <article>Wonderla is one of the largest chain of amusement parks in India. It is owned and operated by Wonderla Holidays Limited which is headquartered near Bidadi, 28 kilometres (17 mi) from Bengaluru, Karnataka.</article>
+      <br>    
+      <section>Year:2021<br>
+               Date:23rd May</section>
+       <h3><u>Reviews</u></h3>
+    <br>
+    <p style="font-weight:bold; font-size:20px">Memorable </p>
+    <table>
+      <tr>
+        <td>priyanka singh</td>
+        <td> ????? </td>
+      </tr>
+    </table><br>
+    <p> cosy experience... </p>
+    <br>
+    <hr>
+    <br>
+
+    <p style="font-weight:bold; font-size:20px">best place to go with frdz n fam!!! </p>
+    <table>
+      <tr>
+        <td>nikhil</td>
+        <td> ????? </td>
+      </tr>
+    </table><br>
+    <p> thankyou wonderla!!! </p>
+    <br>
+    <hr><br>
+
+    <p style="font-weight:bold; font-size:20px">great amusement park ever seen</p>
+    <table>
+      <tr>
+        <td> ayush</td>
+        <td> ????? </td>
+      </tr>
+    </table><br>
+    <p>Thankyou for making my day best </p>
+  </section>
+  <br>
+        <hr>
+      </section>
+       <footer><nav>
+          <a href="/#">HOME</a> |
+          <a href="/#">PLACES</a> |
+          <a href="/#">GALLERY</a> |
+          <a href="/#">ABOUT US</a>
+        </nav>
+<br>
+<strong><i>Copyright &copy; 2021-2022 by nida</i></strong>
+</footer>
+</body>
+</html>
